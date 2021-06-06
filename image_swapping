@@ -1,0 +1,29 @@
+import numpy
+import cv2
+
+pic1=cv2.resize(cv2.imread("flower_1.jpg"),(500,500))
+pic2=cv2.resize(cv2.imread("flower_2.jpg"),(500,500))
+pic3=cv2.resize(cv2.imread("flower_1.jpg"),(500,500))
+
+
+cv2.imshow("pic1",pic1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+cv2.imshow("pic2",pic2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+
+c1=pic2[50:350,150:400]
+pic1[50:350,150:400]=c1
+cv2.imshow("Task 4.3",pic1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+c2=pic3[50:350,150:400]
+pic2[50:350,150:400]=c2
+cv2.imshow("Task 4.2",pic2)
+cv2.waitKey()
+cv2.destroyAllWindows()
